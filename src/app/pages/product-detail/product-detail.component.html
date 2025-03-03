@@ -1,0 +1,9 @@
+<div class="product-detail-container">
+  <div class="product-detail-card" *ngIf="product">
+    <h2 class="product-title">{{ product.name }}</h2>
+    <p class="product-description">{{ product.description }}</p>
+    <p class="product-price">{{ product.price | currency }}</p>
+    <button class="back-button" routerLink="/products">← Back to Products</button>
+  </div>
+</div>
+  
